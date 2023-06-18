@@ -38,6 +38,7 @@ function Provider({ children }) {
             return item
         })
         localStorage.setItem('tasks', JSON.stringify(newTaskList))
+        setTaskList(newTaskList);
     }
 
     const onUpdateStatus = (task) => {

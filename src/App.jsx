@@ -4,7 +4,7 @@ import TaskList from './components/TaskList';
 
 const App = () => {
   return (
-    <div className=" mx-auto">
+    <div className="py-6 mx-auto">
       <TaskBox></TaskBox>
       <TaskList></TaskList>
     </div>
