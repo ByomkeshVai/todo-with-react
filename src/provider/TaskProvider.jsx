@@ -40,9 +40,9 @@ function Provider({ children }) {
         localStorage.setItem('tasks', JSON.stringify(newTaskList))
     }
 
-    const onUpdateStatus = status => {
+    const onUpdateStatus = (task) => {
         const newTaskList = [...taskList]
-        const findTask = newTaskList.find((item) => item.id == id)
+        const findTask = newTaskList.find((item) => item.id == task.id)
         findTask.status = findTask.status === 'pending' ? 'completed' : 'pending';
         localStorage.setItem('tasks', JSON.stringify(newTaskList))
         setTaskList(newTaskList)
