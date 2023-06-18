@@ -31,12 +31,18 @@ const TaskList = () => {
                 filterList.length > 0 ? (
                     filterList.map((task, index) => 
                     currentStatus === task.status || currentStatus == 'all' ?
-                            (<TaskCard
+                            (
+                            
+                                <TaskCard
                                 key={index} task = {task}
-                            ></TaskCard>) : null
+                                ></TaskCard>
+                            
+                            ) : null
                     ) 
                 ): (
-                    <h2 className="empty-message text-xl w-full text-center mx-auto">You have no {currentStatus} task yet</h2>
+                            <div className="div text-center mx-auto">
+                                <h2 className="empty-message text-xl text-center mx-auto">You have no {currentStatus} task yet</h2>
+                            </div>
                 )
             }
            </div>
