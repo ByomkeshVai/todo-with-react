@@ -25,7 +25,7 @@ const TaskBox = () => {
 
 
     return (
-        <div className='max-w-md py-6 rounded-md mx-auto'>
+        <div className='max-w-md py-6 px-6 rounded-md mx-auto bg-base-200 shadow-xl'>
             
   <div className=" p-5">
                 <h2 className="text-3xl font-bold mb-5 text-center">Todo List</h2>

@@ -1,10 +1,12 @@
 import React from 'react';
 import TaskBox from './components/TaskBox';
+import TaskList from './components/TaskList';
 
 const App = () => {
   return (
-    <div className="bg-base-200 max-w-2xl mx-auto">
+    <div className=" mx-auto">
       <TaskBox></TaskBox>
+      <TaskList></TaskList>
     </div>
   );
 };
